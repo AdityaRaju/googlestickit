@@ -4,46 +4,50 @@
     <meta charset="utf-8">
     <title>GoogleStickit</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
+    <meta name="description" content="Google Stickit">
     <meta name="author" content="">
-
-    <!-- Le styles -->
     <link href="css/custom.css" rel="stylesheet">
     <link href="css/spacelab.css" rel="stylesheet">
     <style type="text/css">
-      body {
+      body 
+	  {
         padding-top: 20px;
         padding-bottom: 40px;
       }
-
       /* Custom container */
-      .container-narrow {
+      .container-narrow 
+	  {
         margin: 0 auto;
         max-width: 700px;
       }
-      .container-narrow > hr {
+      .container-narrow > hr 
+	  {
         margin: 30px 0;
       }
-
       /* Main marketing message and sign up button */
-      .jumbotron {
+      .jumbotron 
+	  {
         margin: 60px 0;
         text-align: center;
       }
-      .jumbotron h1 {
+      .jumbotron h1 
+	  {
         font-size: 72px;
         line-height: 1;
       }
-      .jumbotron .btn {
+      .jumbotron .btn 
+	  {
         font-size: 21px;
         padding: 14px 24px;
       }
 
       /* Supporting marketing content */
-      .marketing {
+      .marketing 
+	  {
         margin: 60px 0;
       }
-      .marketing p + h4 {
+      .marketing p + h4 
+	  {
         margin-top: 28px;
       }
     </style>
@@ -53,24 +57,23 @@
       <script src="../assets/js/html5shiv.js"></script>
     <![endif]-->
 
-    <!-- Fav and touch icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="../assets/ico/favicon.png">
   </head>
 
   <body>
 
     <div class="container-narrow">
-
       <div class="masthead">
         <ul class="nav nav-pills pull-right">
           <li class="active"><a href="/">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
+		
         <h3 class="muted">GoogleStickit</h3>
       </div>
 
@@ -85,6 +88,7 @@
       </div>
 
       <hr>
+	  
       <div class="results_container">
         <div id="myCarousel" class="carousel slide">
           <ol class="carousel-indicators">
@@ -92,7 +96,7 @@
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
           </ol>
-          <!-- Carousel items -->
+          
           <div class="carousel-inner">
             <div class="active item center">
               <div class="carosusel-right-size postit">
@@ -127,18 +131,15 @@
               </div>            
             </div>
           </div>
-          <!-- Carousel nav -->
+          
           <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
           <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
         </div>
       
         <div class="row-fluid">
           <div class="span2"></div>
-          
-          
-                
         </div>
-      </div>
+	</div>
 
      <div class="row-fluid result-container">
           <div class="span1"></div>
@@ -186,10 +187,8 @@
         <p>&copy; Stickit 2014</p>
       </div>
 
-    </div> <!-- /container -->
-
-    <!-- Le javascript
-    ================================================== -->
+    </div> 
+	
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"> </script>
@@ -198,35 +197,34 @@
     <script src="js/bootstrap.js"></script>
     <script src="js/backend.js"></script>
     <script src="js/ui_controller.js"></script>
-
     <script>
     
       $('.carousel').carousel({
         interval: 3500
       })
-      
-      
+          
       google.load("visualization", "1", {packages:["corechart"]});
       
-      function perform_search() {     
+      function perform_search() 
+	  {     
         query = $("#query").val();
         UIController.load_search_results( search( query ) );
       }
       
-      function toggle_graph(a) {
-        $(a).parent().parent().find('.result-graph').toggle(500);      
+      function toggle_graph(a) 
+	  {
+	    $(a).parent().parent().find('.result-graph').toggle(500);      
       }
       
-      function toggle_summary( a ) {
+      function toggle_summary( a ) 
+	  {
         $(a).parent().parent().find('.result-summary').toggle(500);
       }
 
-      function close_post(a) {
+      function close_post(a) 
+	  {
         $(a).parent().parent().hide('500');
       }
-
-
-        
     </script>
 
   </body>
